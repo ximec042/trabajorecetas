@@ -1,0 +1,79 @@
+header {
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  justify-content: space-between;
+}
+
+.logo img {
+  height: 70px;
+  width: 70px;
+}
+
+.cover {
+  overflow: hidden;
+  height: 150px;
+  background-image: url("img/portada.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-options {
+  display: none;
+  position: absolute;
+  overflow: auto;
+  padding: 0.5rem 1rem;
+  right: -15px;
+}
+
+.dropdown:hover .dropdown-options {
+  display: block;
+  gap: 2rem;
+}
+.dropdown-container {
+    display: flex;
+    flex-direction: column;
+  background-color: #fff;
+  border-radius: 0 0 8px 8px;
+  margin-top: 8px;
+}
+.dropdown-container a {
+    padding: 10px;
+    border-bottom: 1px solid #eaeaea;
+    text-decoration: unset;
+}
+.dropdown-container a:last-child {
+    border-bottom: unset;
+}
+
+.conteiner {
+  display: flex;
+  background-color: rgb(244, 237, 228);
+  border-radius: 1rem;
+}
+
+.links {
+  display: flex;
+  gap: 2rem;
+  margin-right: 30px;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
